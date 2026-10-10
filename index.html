@@ -1,0 +1,569 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080e22">
+
+<title>Affordable Website Design from $500 | APEX SiteForge Studio</title>
+<meta name="description" content="APEX SiteForge Studio builds affordable custom websites starting at $500, web apps, business logos and brand mascots. Google Business Profile setup for $299. Get a free quote.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="APEX SiteForge Studio | Custom Websites from $500">
+<meta property="og:description" content="Professional, mobile-friendly websites, apps, mascots and business profile assistance.">
+<meta property="og:image" content="assets/hero.webp">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "APEX SiteForge Studio",
+  "description": "Custom website design, web apps, logos, mascots and Google Business Profile setup.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Digital Business Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Custom Business Website Design"
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "299",
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Google Business Profile Setup Assistance"
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<style>
+:root {
+  --bg: #080e22;
+  --panel: #101936;
+  --cyan: #14dfff;
+  --purple: #ae38ff;
+  --white: #ffffff;
+  --muted: #b7c3e1;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; height: auto; }
+.container { width: min(1150px, 92%); margin: auto; }
+.gradient {
+  background: linear-gradient(110deg,var(--cyan),#5685ff,var(--purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(8,14,34,.96);
+  border-bottom: 1px solid #253155;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 82px;
+}
+.logo { display: flex; align-items: center; gap: 12px; }
+.logo img { width: 52px; height: 52px; object-fit: contain; }
+.logo strong { font-size: 27px; letter-spacing: 1px; }
+.logo small { display: block; font-size: 10px; letter-spacing: 3px; }
+.logo .dot { color: var(--purple); }
+.nav-links { display: flex; gap: 25px; align-items: center; }
+.nav-links a:hover { color: var(--cyan); }
+.menu-button {
+  display: none;
+  background: transparent;
+  color: white;
+  border: 0;
+  font-size: 28px;
+  cursor: pointer;
+}
+.btn {
+  display: inline-block;
+  border: 0;
+  padding: 15px 25px;
+  border-radius: 40px;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(110deg,#00ceff,#395cff,#aa20ed);
+  color: white;
+  box-shadow: 0 0 22px #226dff75;
+  text-align: center;
+}
+.btn:hover { filter: brightness(1.17); transform: translateY(-2px); }
+.btn-outline { background: transparent; border: 1px solid #6484d4; box-shadow: none; }
+section { padding: 75px 0; }
+h1, h2, h3 { line-height: 1.14; }
+h1 { font-size: clamp(42px,6vw,76px); margin: 20px 0; }
+h2 { font-size: clamp(30px,4vw,44px); margin: 0 0 15px; }
+p { color: var(--muted); }
+.eyebrow { color: var(--cyan); font-weight: bold; letter-spacing: 2px; font-size: 12px; }
+.hero {
+  background: radial-gradient(ellipse at 80% 35%,#263e86 0%,transparent 57%);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+.hero p { font-size: 19px; max-width: 580px; }
+.actions { display: flex; gap: 13px; flex-wrap: wrap; margin-top: 26px; }
+.hero-image {
+  border-radius: 24px;
+  box-shadow: 0 0 45px #6836fb45;
+  width: 100%;
+}
+.trust { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 26px; color: #dbe5ff; font-size: 13px; }
+.center { text-align: center; }
+.subtitle { max-width: 690px; margin: 0 auto 35px; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  margin-top: 35px;
+}
+.card {
+  background: linear-gradient(150deg,#172247,#0e142c);
+  border: 1px solid #354878;
+  border-radius: 20px;
+  padding: 27px;
+}
+.card:hover { border-color: var(--cyan); }
+.card .symbol { font-size: 35px; }
+.card h3 { font-size: 22px; }
+.price { font-size: 37px; font-weight: 900; margin: 12px 0; }
+.price small { font-size: 14px; font-weight: 400; color: var(--muted); }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 18px;
+}
+.gallery img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 17px; }
+.gallery figure { margin: 0; }
+.gallery figcaption { margin-top: 10px; font-weight: bold; }
+.highlight { background: #0e1632; }
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
+}
+.split img { border-radius: 22px; }
+.checks { list-style: none; padding: 0; }
+.checks li { margin: 13px 0; color: #dbe5ff; }
+.checks li:before { content: "✓  "; color: var(--cyan); }
+.steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.step-number { font-size: 34px; font-weight: 900; color: var(--cyan); }
+.faq details {
+  background: var(--panel);
+  padding: 20px;
+  margin: 12px 0;
+  border: 1px solid #31436c;
+  border-radius: 12px;
+}
+.faq summary { cursor: pointer; font-weight: bold; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+form { background: var(--panel); padding: 28px; border-radius: 20px; border: 1px solid #364775; }
+label { display: block; margin: 14px 0 5px; font-weight: 600; }
+input, select, textarea {
+  width: 100%;
+  background: #080e22;
+  color: #fff;
+  border: 1px solid #46577f;
+  border-radius: 9px;
+  padding: 13px;
+  font: inherit;
+}
+textarea { min-height: 120px; resize: vertical; }
+form .btn { width: 100%; margin-top: 18px; font-size: 16px; }
+footer { padding: 35px 0; border-top: 1px solid #293552; color: var(--muted); text-align: center; }
+@media (max-width: 800px) {
+  .menu-button { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    right: 0;
+    background: #0b1230;
+    flex-direction: column;
+    padding: 25px;
+  }
+  .nav-links.open { display: flex; }
+  .hero-grid, .split, .contact-grid { grid-template-columns: 1fr; }
+  .cards, .gallery, .steps { grid-template-columns: 1fr 1fr; }
+  section { padding: 50px 0; }
+}
+@media (max-width: 520px) {
+  .cards, .gallery, .steps { grid-template-columns: 1fr; }
+  .actions { flex-direction: column; }
+  .actions .btn { width: 100%; }
+  .logo strong { font-size: 23px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+
+<body>
+<header>
+<nav class="container">
+  <a class="logo" href="#home" aria-label="APEX SiteForge Studio home">
+    <img src="assets/icon.svg" alt="APEX logo">
+    <span><strong>APEX<span class="dot">.</span></strong><small>SITEFORGE STUDIO</small></span>
+  </a>
+  <button class="menu-button" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <div class="nav-links" id="navLinks">
+    <a href="#services">Services</a>
+    <a href="#portfolio">Our Work</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#about">About</a>
+    <a href="#contact" class="btn">Get Started</a>
+  </div>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">CUSTOM WEBSITES • APPS • BRANDING</div>
+      <h1>Launch Your <span class="gradient">Business Online.</span></h1>
+      <p>Professional websites and business tools that help you look established, get found by customers, and grow your business.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Get My Free Quote →</a>
+        <a class="btn btn-outline" href="#portfolio">See Our Designs</a>
+      </div>
+      <div class="trust">
+        <span>✓ Custom Design</span>
+        <span>✓ Mobile Optimized</span>
+        <span>✓ Built for Growth</span>
+      </div>
+    </div>
+    <img class="hero-image" src="assets/hero.webp" alt="APEX custom website design displayed on desktop and mobile devices" width="1254" height="1254">
+  </div>
+</section>
+
+<section id="services" class="container">
+  <div class="center">
+    <div class="eyebrow">WHAT WE DO</div>
+    <h2>Everything Your Business Needs <span class="gradient">Online</span></h2>
+    <p class="subtitle">From your first website to custom business tools and memorable branding, we help businesses build a stronger online presence.</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <div class="symbol">🌐</div>
+      <h3>Custom Website Design</h3>
+      <p>Modern, responsive business websites built around your services, brand, and customer goals.</p>
+    </article>
+    <article class="card">
+      <div class="symbol">📱</div>
+      <h3>Web Apps & Business Tools</h3>
+      <p>Custom calculators, customer intake tools, booking-style interfaces, and interactive applications.</p>
+    </article>
+    <article class="card">
+      <div class="symbol">📍</div>
+      <h3>Google Business Profile</h3>
+      <p>Get help preparing and setting up your eligible business profile and connecting it to your website.</p>
+    </article>
+    <article class="card">
+      <div class="symbol">🎨</div>
+      <h3>Logo & Mascot Design</h3>
+      <p>Eye-catching logos, illustrated mascots, digital marketing graphics and business branding.</p>
+    </article>
+    <article class="card">
+      <div class="symbol">🔎</div>
+      <h3>SEO-Friendly Development</h3>
+      <p>Search-friendly page structure, relevant content, mobile optimization and basic technical SEO.</p>
+    </article>
+    <article class="card">
+      <div class="symbol">🚀</div>
+      <h3>Website Launch Support</h3>
+      <p>Help publishing your site, connecting your domain and preparing your online presence for customers.</p>
+    </article>
+  </div>
+</section>
+
+<section class="highlight" id="pricing">
+  <div class="container">
+    <div class="center">
+      <div class="eyebrow">STRAIGHTFORWARD STARTING PRICES</div>
+      <h2>Professional Design. <span class="gradient">Affordable Prices.</span></h2>
+      <p class="subtitle">Get started without the high agency price tag. Every project receives a customized quote based on your needs.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <h3>Business Website</h3>
+        <div class="price gradient">$500 <small>starting at</small></div>
+        <ul class="checks">
+          <li>Custom business design</li>
+          <li>Mobile-friendly layout</li>
+          <li>Contact and lead sections</li>
+          <li>Basic on-page SEO</li>
+        </ul>
+        <a href="#contact" class="btn">Request Website Quote</a>
+      </article>
+      <article class="card">
+        <h3>Google Business Profile Setup</h3>
+        <div class="price gradient">$299</div>
+        <ul class="checks">
+          <li>Business profile setup assistance</li>
+          <li>Business details and services</li>
+          <li>Website link integration</li>
+          <li>Verification guidance</li>
+        </ul>
+        <a href="#contact" class="btn">Get Profile Help</a>
+      </article>
+      <article class="card">
+        <h3>Custom Apps & Branding</h3>
+        <div class="price gradient">Custom <small>quote</small></div>
+        <ul class="checks">
+          <li>Interactive web applications</li>
+          <li>Brand mascots and logos</li>
+          <li>Custom business tools</li>
+          <li>Project-specific development</li>
+        </ul>
+        <a href="#contact" class="btn">Discuss My Project</a>
+      </article>
+    </div>
+    <p class="center">Website prices are starting estimates. Domain, hosting, and additional features may cost extra. Google determines Business Profile eligibility and verification.</p>
+  </div>
+</section>
+
+<section class="container" id="portfolio">
+  <div class="center">
+    <div class="eyebrow">OUR DESIGN STYLE</div>
+    <h2>Designs That <span class="gradient">Stand Out</span></h2>
+    <p class="subtitle">Explore examples of the website styles, business marketing and brand experiences we can create.</p>
+  </div>
+  <div class="gallery">
+    <figure>
+      <img src="assets/luxury.webp" loading="lazy" alt="Premium responsive website design concept">
+      <figcaption>Premium Websites</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/growth.webp" loading="lazy" alt="Business growth website concept">
+      <figcaption>Business Growth</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/pricing.webp" loading="lazy" alt="Affordable website design promotion">
+      <figcaption>Affordable Design</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/website-showcase.webp" loading="lazy" alt="Website displayed on a computer and phone">
+      <figcaption>Mobile-Ready Websites</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/mascot.webp" loading="lazy" alt="APEX mascot design concept">
+      <figcaption>Custom Mascot Design</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/logo.webp" loading="lazy" alt="APEX SiteForge Studio brand logo">
+      <figcaption>Brand Identity</figcaption>
+    </figure>
+  </div>
+  <p class="center">Images shown are illustrative design concepts, not claims of completed client projects.</p>
+</section>
+
+<section class="highlight" id="about">
+  <div class="container split">
+    <div>
+      <div class="eyebrow">ABOUT APEX SITEFORGE STUDIO</div>
+      <h2>Big Brand Look. <span class="gradient">Small Business Pricing.</span></h2>
+      <p>At APEX SiteForge Studio, we believe small businesses deserve professional-looking websites without paying traditional agency prices.</p>
+      <p>We focus on attractive designs, practical business tools, clear communication and website experiences that make it easy for customers to reach you.</p>
+      <ul class="checks">
+        <li>Designed for phones, tablets and computers</li>
+        <li>Built around your business and customers</li>
+        <li>SEO-conscious website foundations</li>
+        <li>Simple, straightforward starting prices</li>
+      </ul>
+      <a href="#contact" class="btn">Start Your Project →</a>
+    </div>
+    <img src="assets/mascot.webp" loading="lazy" alt="Friendly neon-colored APEX mascot">
+  </div>
+</section>
+
+<section class="container">
+  <div class="center">
+    <div class="eyebrow">HOW IT WORKS</div>
+    <h2>Three Steps to <span class="gradient">Getting Online</span></h2>
+  </div>
+  <div class="steps">
+    <div class="card">
+      <div class="step-number">01</div>
+      <h3>Tell Us Your Idea</h3>
+      <p>Share your business type, design preferences and the features you need.</p>
+    </div>
+    <div class="card">
+      <div class="step-number">02</div>
+      <h3>Review Your Plan</h3>
+      <p>We discuss the scope, pricing and proposed design before moving forward.</p>
+    </div>
+    <div class="card">
+      <div class="step-number">03</div>
+      <h3>Build & Launch</h3>
+      <p>We develop your project, review the final details and help prepare it for launch.</p>
+    </div>
+  </div>
+</section>
+
+<section class="highlight faq" id="faq">
+  <div class="container">
+    <div class="center">
+      <h2>Frequently Asked <span class="gradient">Questions</span></h2>
+    </div>
+    <details>
+      <summary>How much does a small business website cost?</summary>
+      <p>APEX SiteForge Studio offers custom business website builds starting at $500. Final pricing depends on the number of pages, features, integrations and project requirements.</p>
+    </details>
+    <details>
+      <summary>Will my website work on mobile phones?</summary>
+      <p>Yes. We build responsive layouts designed for mobile phones, tablets and desktop computers.</p>
+    </details>
+    <details>
+      <summary>Can you help with my Google Business Profile?</summary>
+      <p>Yes. Our $299 setup service assists with your eligible business profile, business information, website connection and verification guidance. Google controls eligibility, approval and ranking.</p>
+    </details>
+    <details>
+      <summary>Can you build custom web applications?</summary>
+      <p>Yes. We can discuss interactive business tools, customer forms, calculators and other custom web-based features. Pricing depends on complexity.</p>
+    </details>
+    <details>
+      <summary>Will my website rank first on Google or ChatGPT?</summary>
+      <p>No agency can guarantee first place. We build technically accessible, search-friendly pages to improve the opportunity for search engines and AI search systems to discover your business.</p>
+    </details>
+  </div>
+</section>
+
+<section class="container" id="contact">
+  <div class="contact-grid">
+    <div>
+      <div class="eyebrow">LET'S GET STARTED</div>
+      <h2>Ready to Build <span class="gradient">Something Great?</span></h2>
+      <p>Tell us what you need. Whether you're launching a new business or upgrading an existing website, we'd love to learn about your project.</p>
+      <h3>Websites Starting at $500</h3>
+      <p>Custom Websites • Web Apps • Mascots • Google Business Profile Assistance</p>
+      <p>Send your project information to request a free consultation.</p>
+    </div>
+    <form id="quoteForm">
+      <h3>Request Your Free Quote</h3>
+      <label for="name">Your Name *</label>
+      <input id="name" name="name" required autocomplete="name">
+      <label for="email">Email Address *</label>
+      <input id="email" name="email" type="email" required autocomplete="email">
+      <label for="business">Business Name</label>
+      <input id="business" name="business" autocomplete="organization">
+      <label for="service">Service Needed *</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option>Website Design</option>
+        <option>Google Business Profile Setup</option>
+        <option>Web App / Business Tool</option>
+        <option>Logo / Mascot Design</option>
+        <option>Other Services</option>
+      </select>
+      <label for="details">Tell Us About Your Project</label>
+      <textarea id="details" name="details" placeholder="What type of business do you have? What would you like us to build?"></textarea>
+      <button class="btn" type="submit">Prepare My Quote Request →</button>
+      <p id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <strong>APEX<span class="gradient">.</span> SITEFORGE STUDIO</strong>
+    <p>Custom Websites • Apps • Branding • Business Growth</p>
+    <p>© <span id="year"></span> APEX SiteForge Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+// IMPORTANT: Change this to your business email.
+const BUSINESS_EMAIL = "YOUR_EMAIL@example.com";
+
+// Mobile navigation
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+  const open = navLinks.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", String(open));
+  menuBtn.textContent = open ? "✕" : "☰";
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.textContent = "☰";
+  });
+});
+
+// Copyright year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Quote form: opens visitor's email application
+document.getElementById("quoteForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const status = document.getElementById("formStatus");
+
+  if (BUSINESS_EMAIL === "YOUR_EMAIL@example.com") {
+    status.textContent = "Business owner: add your email address in the JavaScript before launching.";
+    return;
+  }
+
+  const get = id => document.getElementById(id).value.trim();
+
+  const subject = "APEX Website Quote Request - " + get("service");
+  const message =
+    "Name: " + get("name") +
+    "\nEmail: " + get("email") +
+    "\nBusiness: " + get("business") +
+    "\nService: " + get("service") +
+    "\n\nProject Details:\n" + get("details");
+
+  window.location.href =
+    "mailto:" + BUSINESS_EMAIL +
+    "?subject=" + encodeURIComponent(subject) +
+    "&body=" + encodeURIComponent(message);
+
+  status.textContent = "Your email app should open. Please press Send to complete your request.";
+});
+</script>
+</body>
+</html>
