@@ -233,6 +233,118 @@ footer { padding: 35px 0; border-top: 1px solid #293552; color: var(--muted); te
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* APEX CHIHUAHUA MASCOT - DESKTOP */
+.hero-grid {
+  position: relative;
+}
+
+.apex-hero-mascot {
+  position: absolute;
+  width: 180px;
+  height: auto;
+  left: -165px;
+  bottom: 0;
+  object-fit: contain;
+  filter: drop-shadow(0 0 14px #8b36ff66);
+  pointer-events: none;
+}
+
+/* TABLET AND SMALLER SCREENS */
+@media (max-width: 1450px) {
+  .apex-hero-mascot {
+    position: static;
+    width: 160px;
+    height: auto;
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin: 0 auto;
+  }
+}
+
+/* MOBILE PHONES */
+@media (max-width: 800px) {
+  .apex-hero-mascot {
+    width: 145px;
+    max-width: 55vw;
+    margin: 0 auto 10px;
+  }
+}
+
+
+/* APEX HOMEPAGE CONTACT BOX */
+
+.apex-hero-contact {
+  margin-top: 22px;
+  padding: 20px;
+  max-width: 480px;
+  border-radius: 18px;
+  border: 1px solid #3875b0;
+  background: linear-gradient(
+    135deg,
+    #101e47,
+    #20143e
+  );
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.apex-hero-contact h3 {
+  color: #ffffff;
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.apex-hero-contact p {
+  color: #c9d7f5;
+  font-size: 15px;
+  margin: 0 0 12px;
+}
+
+.apex-number {
+  display: inline-block;
+  color: #14dfff;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+.apex-contact-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.apex-contact-actions .btn {
+  flex: 1 1 150px;
+  text-align: center;
+}
+
+/* CONTACT BOX ON MOBILE */
+
+@media (max-width: 600px) {
+
+  .apex-hero-contact {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    margin-top: 20px;
+  }
+
+  .apex-number {
+    font-size: 23px;
+  }
+
+  .apex-contact-actions {
+    flex-direction: column;
+  }
+
+  .apex-contact-actions .btn {
+    flex: none;
+    width: 100%;
+  }
+}
+
 </style>
 </head>
 
@@ -257,6 +369,17 @@ footer { padding: 35px 0; border-top: 1px solid #293552; color: var(--muted); te
 <main>
 <section class="hero" id="home">
   <div class="container hero-grid">
+    
+<!-- ORIGINAL APEX CHIHUAHUA MASCOT -->
+<img
+  src="assets/apex-mascot.png"
+  alt="APEX SiteForge Studio Chihuahua mascot"
+  class="apex-hero-mascot"
+  width="600"
+  height="600"
+>
+<!-- END APEX MASCOT -->
+
     <div>
       <div class="eyebrow">CUSTOM WEBSITES • APPS • BRANDING</div>
       <h1>Launch Your <span class="gradient">Business Online.</span></h1>
@@ -265,6 +388,36 @@ footer { padding: 35px 0; border-top: 1px solid #293552; color: var(--muted); te
         <a class="btn" href="#contact">Get My Free Quote →</a>
         <a class="btn btn-outline" href="#portfolio">See Our Designs</a>
       </div>
+      
+<!-- APEX HOMEPAGE CONTACT BOX -->
+<div class="apex-hero-contact">
+
+  <h3>Call or Text APEX</h3>
+
+  <p>
+    Questions about your website?
+    Contact us for a free consultation.
+  </p>
+
+  <a class="apex-number" href="tel:+16233092016">
+    (623) 309-2016
+  </a>
+
+  <div class="apex-contact-actions">
+
+    <a href="tel:+16233092016" class="btn">
+      📞 Call Us
+    </a>
+
+    <a href="sms:+16233092016" class="btn">
+      💬 Text Us
+    </a>
+
+  </div>
+
+</div>
+<!-- END APEX HOMEPAGE CONTACT BOX -->
+
       <div class="trust">
         <span>✓ Custom Design</span>
         <span>✓ Mobile Optimized</span>
