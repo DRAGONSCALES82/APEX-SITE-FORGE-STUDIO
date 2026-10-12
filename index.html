@@ -374,36 +374,84 @@ main > section {
 }
  
 
+
 /* APEX CHIHUAHUA HEADER POSITION */
 .apex-header-mascot {
   position: absolute;
-  top: 1px;
-  left: max(10px, calc((100vw - 1150px) / 2 - 160px));
-  width: 125px;
+  left: 36%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 95px;
   height: 80px;
   object-fit: contain;
   pointer-events: none;
   filter: drop-shadow(0 0 14px #8b36ff66);
 }
 
-/* Tablets and smaller desktops */
-@media (max-width: 1300px) {
+/* TABLET */
+@media (min-width: 801px) and (max-width: 1100px) {
   .apex-header-mascot {
-    position: static;
-    width: 66px;
-    height: 70px;
-    flex: 0 0 66px;
+    left: 39%;
+    width: 68px;
+    height: 68px;
   }
 }
 
-/* Mobile phones */
-@media (max-width: 520px) {
+/* MOBILE PHONES */
+@media (max-width: 800px) {  
+.logo {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.apex-header-mascot {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.menu-button {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+  nav.container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 8px;
+  }
+
   .apex-header-mascot {
-    width: 38px;
-    height: 50px;
-    flex-basis: 38px;
+    position: static;
+    transform: none;
+    width: 46px;
+    height: 58px;
+  }
+
+  .logo {
+    min-width: 0;
+    gap: 8px;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo strong {
+    font-size: 20px;
+  }
+
+  .logo small {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .nav-links {
+    top: 100%;
   }
 }
+
 
 
 /* APEX UNIFIED CONTACT BOX */
