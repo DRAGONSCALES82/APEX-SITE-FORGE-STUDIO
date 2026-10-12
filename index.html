@@ -405,6 +405,55 @@ main > section {
   }
 }
 
+
+/* APEX UNIFIED CONTACT BOX */
+.apex-action-box {
+  width: 100%;
+  max-width: 540px;
+  padding: 20px;
+  border: 1px solid #3875b0;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #101e47, #20143e);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  box-sizing: border-box;
+}
+
+/* Make the inner contact area seamless */
+.apex-action-box .apex-hero-contact {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  margin-top: 24px;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Align the two top buttons */
+.apex-action-box > .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Mobile-friendly sizing */
+@media (max-width: 600px) {
+  .apex-action-box {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .apex-action-box > .actions {
+    flex-direction: column;
+  }
+
+  .apex-action-box > .actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 </style>
 </head>
 
@@ -443,6 +492,9 @@ main > section {
       <div class="eyebrow">CUSTOM WEBSITES • APPS • BRANDING</div>
       <h1>Launch Your <span class="gradient">Business Online.</span></h1>
       <p>Professional websites and business tools that help you look established, get found by customers, and grow your business.</p>
+      
+<div class="apex-action-box">
+
       <div class="actions">
         <a class="btn" href="#contact">Get My Free Quote →</a>
         <a class="btn btn-outline" href="#portfolio">See Our Designs</a>
@@ -476,6 +528,8 @@ main > section {
 
 </div>
 <!-- END APEX HOMEPAGE CONTACT BOX -->
+
+</div>
 
       <div class="trust">
         <span>✓ Custom Design</span>
