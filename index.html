@@ -454,6 +454,38 @@ main > section {
   }
 }
 
+
+/* APEX TikTok Header */
+nav.container {
+  position: relative;
+}
+
+.apex-tiktok {
+  position: absolute;
+  left: 43%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.apex-tiktok:hover {
+  color: #00dfff;
+}
+
+/* Mobile-friendly TikTok */
+@media (max-width: 800px) {
+  .apex-tiktok {
+    position: static;
+    transform: none;
+    display: block;
+    padding: 8px 0;
+  }
+}
+
 </style>
 </head>
 
@@ -473,6 +505,15 @@ main > section {
   </a>
   <button class="menu-button" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   <div class="nav-links" id="navLinks">
+    
+<a href="https://www.tiktok.com/@apexsiteforgestudio"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="apex-tiktok"
+   aria-label="Visit APEX on TikTok">
+  ♪ TikTok
+</a>
+
     <a href="#services">Services</a>
     <a href="#portfolio">Our Work</a>
     <a href="#pricing">Pricing</a>
