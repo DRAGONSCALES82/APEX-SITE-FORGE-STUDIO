@@ -345,6 +345,34 @@ footer { padding: 35px 0; border-top: 1px solid #293552; color: var(--muted); te
   }
 }
 
+ 
+/* PHOENIX WEBSITE BACKGROUND */
+body {
+  background-image:
+    linear-gradient(
+      rgba(5, 10, 30, 0.45),
+      rgba(5, 10, 30, 0.60)
+    ),
+    url("apex-background.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+/* Let background show through sections */
+.hero,
+main,
+main > section {
+  background: transparent !important;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll !important;
+  }
+}
+ 
 </style>
 </head>
 
